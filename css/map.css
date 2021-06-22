@@ -1,0 +1,18 @@
+.map {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.map__title {
+    margin-top: 60px;
+    color: #352b17;
+    font-size: 40px;
+    margin-bottom: -20px;
+}
+
+.map__block {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+}

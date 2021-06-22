@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Coming+Soon&family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.content-block {
+    background: url(../img/pizza-bg1.png);
+}
+
+
+@media(max-width:900px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .menu {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .catalog {
+        width: 95%;
+    }
+
+    .product-card:hover {
+        transform: scale(1);
+    }
+}
+
+
+.beige {
+    background: #faf8e4;
+}
+
+.about-block {
+    width: 80%;
+    margin: 0 auto;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.about-block__title {
+    color: #352b17;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.about-block__text {
+    margin-top: 40px;
+    line-height: 24px;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: none;
+    scrollbar-color: #efbc1e #2e2e2e;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #2e2e2e;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #efbc1e;
+    border-radius: 0px;
+    border: 0px solid #ffffff;
+}

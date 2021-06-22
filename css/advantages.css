@@ -1,0 +1,34 @@
+.advantages {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    margin: 50px 0;
+    align-items: center;
+}
+
+.advantages__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__img {}
+
+.advantages__text-box {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantages__title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.advantages__text {
+    margin-top: 15px;
+    text-align: center;
+}
+

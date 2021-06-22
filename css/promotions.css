@@ -1,0 +1,67 @@
+.promotions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.promotions__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promotions__title {
+    font-size: 40px;
+    color: #312f2f;
+}
+
+.promotions__all {
+    color: #312f2f;
+    font-size: 14px;
+}
+
+.promotions__all:hover {
+    cursor: pointer;
+    color: #efbc1e;
+}
+
+.promotions__cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+
+.promotions__card {
+    background: #fff;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.promotions__card:hover {
+    transform: scale(1.01);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.promotions__img {
+    width: 100%;
+}
+
+.promotions__text-box {
+    padding: 30px;
+    height: 100%;
+    line-height: 25px;
+}
+
+.promotions__card-title {
+    font-size: 17px;
+    color: #312F2F;
+}
+
+.promotions__text {
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
