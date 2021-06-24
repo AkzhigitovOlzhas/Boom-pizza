@@ -1,0 +1,26 @@
+.upBtn { 
+    position: fixed;
+    bottom: 8%;
+    right: 5%;
+    z-index: 9999999;
+}
+
+.upBtn__circle {
+    padding: 18px;
+    background: #efbc1e;
+    border-radius: 100%;
+}
+
+.upBtn-icon {
+    font-size: 25px;
+    color: #312f2f;
+    transform: rotate(-45deg);
+}
+
+.upBtn:start {
+    display: block;
+}
+
+.upBtn:hover {
+    transform: scale(1.05);
+}

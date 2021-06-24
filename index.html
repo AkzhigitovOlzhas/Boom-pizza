@@ -15,26 +15,28 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="stylesheet" href="css/promotions.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/upBtn.css">
     <title>Boom Pizza</title>
 </head>
 
 <body>
-    <div class="container address">
-        <div class="address__city"></div>
-        <div class="address__phone"></div>
-    </div>
+    <a href="#" class="upBtn">
+        <div class="upBtn__circle">
+            <div class="upBtn-icon fas fa-rocket"></div>
+        </div>
+    </a>
 
     <div class="container fixed-menu">
         <div class="wrapper">
             <div class="menu">
-                <div class="menu__logo">Boom Pizza</div>
+                <a href="../index.html" class="menu__logo">Boom Pizza</a>
                 <div class="menu__list">
                     <a href="#pizza" class="menu__item">ПИЦЦЫ</a>
                     <a href="#snacks" class="menu__item">ЗАКУСКИ</a>
                     <a href="#salads" class="menu__item">САЛАТЫ</a>
                     <a href="#desserts" class="menu__item">ДЕСЕРТЫ</a>
                     <a href="#beverages" class="menu__item">НАПИТКИ</a>
-                    <a href="#" class="menu__basket">Корзина</a>
+                    <a href="/pages/basket.html" class="menu__basket">Корзина</a>
                 </div>
                 <div class="menu__burger-icon-bars" onclick="showMenu()"></div>
             </div>
@@ -44,7 +46,7 @@
                 <a href="#salads" class="burger-menu__item">САЛАТЫ</a>
                 <a href="#desserts" class="burger-menu__item">ДЕСЕРТЫ</a>
                 <a href="#beverages" class="burger-menu__item">НАПИТКИ</a>
-                <a href="#" class=" burger-menu__basket">Корзина</a>
+                <a href="/pages/basket.html" class=" burger-menu__basket">Корзина</a>
             </div>
         </div>
     </div>
@@ -79,460 +81,28 @@
             <div id="pizza"></div>
             <br>
             <p class="catalog__header">Пиццы</p>
-            <div class="catalog__category">
+            <div class="catalog__category" id="category_pizza"></div>
 
-                <div class="product-card">
-
-                    <div class="product-card__img-box">
-                        <div class="product-card__more-info">
-                            Энергетическая ценность 199,6 ккал<br>
-                            Пищевая ценность продукта на 100 г:<br>
-                            Углеводы 24,4 г<br>
-                            Белки 8,8 г<br>
-                            Жиры 7,4 г
-                        </div>
-                        <img class="product-card__img" src="img/products/product1-big.jpg " alt="">
-                    </div>
-                    <p class="product-card__name">Пипперони</p>
-
-                    <select name="" id="" class="product-card__select">
-                        <option value="">32см - 400 руб</option>
-                        <option value="">30см - 400 руб</option>
-                        <option value="">35см - 400 руб</option>
-                    </select>
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-
-                </div>
-
-                <div class="product-card">
-
-                    <div class="product-card__img-box">
-                        <div class="product-card__more-info">
-                            Энергетическая ценность 199,6 ккал<br>
-                            Пищевая ценность продукта на 100 г:<br>
-                            Углеводы 24,4 г<br>
-                            Белки 8,8 г<br>
-                            Жиры 7,4 г
-                        </div>
-                        <img class="product-card__img" src="img/products/product1-big.jpg " alt="">
-                    </div>
-                    <p class="product-card__name">Пипперони</p>
-
-                    <select name="" id="" class="product-card__select">
-                        <option value="">32см - 400 руб</option>
-                        <option value="">30см - 400 руб</option>
-                        <option value="">35см - 400 руб</option>
-                    </select>
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="product-card">
-
-                    <div class="product-card__img-box">
-                        <div class="product-card__more-info">
-                            Энергетическая ценность 199,6 ккал<br>
-                            Пищевая ценность продукта на 100 г:<br>
-                            Углеводы 24,4 г<br>
-                            Белки 8,8 г<br>
-                            Жиры 7,4 г
-                        </div>
-                        <img class="product-card__img" src="img/products/product1-big.jpg " alt="">
-                    </div>
-                    <p class="product-card__name">Пипперони</p>
-
-                    <select name="" id="" class="product-card__select">
-                        <option value="">32см - 400 руб</option>
-                        <option value="">30см - 400 руб</option>
-                        <option value="">35см - 400 руб</option>
-                    </select>
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="product-card">
-
-                    <div class="product-card__img-box">
-                        <div class="product-card__more-info">
-                            Энергетическая ценность 199,6 ккал<br>
-                            Пищевая ценность продукта на 100 г:<br>
-                            Углеводы 24,4 г<br>
-                            Белки 8,8 г<br>
-                            Жиры 7,4 г
-                        </div>
-                        <img class="product-card__img" src="img/products/product1-big.jpg " alt="">
-                    </div>
-                    <p class="product-card__name">Пипперони</p>
-
-                    <select name="" id="" class="product-card__select">
-                        <option value="">32см - 400 руб</option>
-                        <option value="">30см - 400 руб</option>
-                        <option value="">35см - 400 руб</option>
-                    </select>
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-
-                </div>
-
-
-                <div class="product-card">
-
-                    <div class="product-card__img-box">
-                        <div class="product-card__more-info">
-                            Энергетическая ценность 199,6 ккал<br>
-                            Пищевая ценность продукта на 100 г:<br>
-                            Углеводы 24,4 г<br>
-                            Белки 8,8 г<br>
-                            Жиры 7,4 г
-                        </div>
-                        <img class="product-card__img" src="img/products/product1-big.jpg " alt="">
-                    </div>
-                    <p class="product-card__name">Пипперони</p>
-
-                    <select name="" id="" class="product-card__select">
-                        <option value="">32см - 400 руб</option>
-                        <option value="">30см - 400 руб</option>
-                        <option value="">35см - 400 руб</option>
-                    </select>
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-
-                </div>
-
-            </div>
 
             <div id="snacks"></div>
             <p class="catalog__header">Закуски</p>
+            <div class="catalog__category" id="category_snacks"></div>
 
-            <div class="catalog__category">
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chicken.jpg" alt="">
-                    <p class="product-card__name">Куриные крылышки</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chicken.jpg" alt="">
-                    <p class="product-card__name">Куриные крылышки</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chicken.jpg" alt="">
-                    <p class="product-card__name">Куриные крылышки</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chicken.jpg" alt="">
-                    <p class="product-card__name">Куриные крылышки</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-            </div>
 
             <div id="salads"></div>
             <p class="catalog__header">Салаты</p>
+            <div class="catalog__category" id="category_salads"></div>
 
-            <div class="catalog__category">
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/2228eebf-07f6-409e-9115-a80b00848791.jpg" alt="">
-                    <p class="product-card__name">Цезарь с курицей</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/2228eebf-07f6-409e-9115-a80b00848791.jpg" alt="">
-                    <p class="product-card__name">Цезарь с курицей</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/2228eebf-07f6-409e-9115-a80b00848791.jpg" alt="">
-                    <p class="product-card__name">Цезарь с курицей</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/2228eebf-07f6-409e-9115-a80b00848791.jpg" alt="">
-                    <p class="product-card__name">Цезарь с курицей</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-            </div>
 
             <div id="desserts"></div>
             <p class="catalog__header">Десерты</p>
+            <div class="catalog__category" id="category_desserts"></div>
 
-            <div class="catalog__category">
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chizkeyk1.jpg" alt="">
-                    <p class="product-card__name">Чизкейк классический</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chizkeyk1.jpg" alt="">
-                    <p class="product-card__name">Чизкейк классический</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/chizkeyk1.jpg" alt="">
-                    <p class="product-card__name">Чизкейк классический</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__weight">700 гр.</p>
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-            </div>
 
             <div id="beverages"></div>
             <p class="catalog__header">Напитки</p>
 
-            <div class="catalog__category">
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/cola.jpg" alt="">
-                    <p class="product-card__name">Кока-Кола, 1 л</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/cola.jpg" alt="">
-                    <p class="product-card__name">Кока-Кола, 1 л</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/cola.jpg" alt="">
-                    <p class="product-card__name">Кока-Кола, 1 л</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <img class="product-card__img" src="img/products/cola.jpg" alt="">
-                    <p class="product-card__name">Кока-Кола, 1 л</p>
-
-                    <div class="product-card__order-box">
-                        <div class="product-card__box-info">
-                            <p class="product-card__price">400</p>
-                        </div>
-                        <div class="product-card__count-box">
-                            <div class="product-card__count-btn pizza__minus-btn" onclick="minus(this)"></div>
-                            <input type="number" class="product-card__counter" min="1" value="1">
-                            <div class="product-card__count-btn pizza__plus-btn" onclick="plus(this)"></div>
-                        </div>
-                        <div class="product-card__basket-btn fa fa-shopping-cart"></div>
-                    </div>
-                </div>
-            </div>
+            <div class="catalog__category" id="category_beverages"></div>
 
             <div class="promotions">
                 <div class="promotions__header">
@@ -692,6 +262,7 @@
     <script src="js/slider.js"></script>
     <script src="js/counter_btn.js"></script>
     <script src="js/burger_menu.js"></script>
+    <script src="js/load_page.js"></script>
 </body>
 
 </html>
