@@ -1,0 +1,25 @@
+.success-wrapper {
+    padding: 200px 0;
+}
+
+.success-wrapper2 {
+    padding: 50px; 
+    background: #fff;
+}
+
+.success-message {
+    border-radius:20px;
+    padding: 40px;
+    background: #c1f1be;
+}
+
+.success-message__title {
+    font-size: 24px;
+    color: #312f2f;
+}
+
+.success-message__text {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Comfortaa';
+}

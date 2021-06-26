@@ -16,6 +16,7 @@ body {
 }
 
 .basket__products {
+    min-height: 250px;
     margin: 50px 0;
     padding: 20px 40px;
     background: #fff;
@@ -25,8 +26,9 @@ body {
 .basket__product {
     padding: 20px;
     position: relative;
-    border: 1px solid gray;
+    border: 1px double #ccc;
     margin: 20px 0;
+    border-radius: 10px;
 }
 
 .basket__wrapper {
@@ -79,6 +81,38 @@ body {
 .basket__counter {
     width: 40px;
     height: 30px;
+    text-align: center;
+}
+
+.basket__total {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px double #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.basket__total-text {
+    font-size: 22px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+    color: rgb(44, 44, 42);
+}
+
+.basket__total-btn {
+    cursor: pointer;
+    font-family: 'Comfortaa';
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #efbc1e;
+    color: #fff;
+    text-decoration: none;
+}
+
+.basket__total-btn:hover {
+    background: rgb(44, 44, 42);
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -87,14 +121,45 @@ input[type=number]::-webkit-outer-spin-button {
     height: 30px;
 }
 
+.basket__delete-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 .basket__delete-btn::before {
     content: '\f00d';
     font-family: 'FontAwesome';
     cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
     color: red;
+    font-size: 22px;
+}
+
+.basket__delete-btn:hover {
+    transform: scale(1.1);
+    animation: closeBtnRotate 2s;
+}
+
+.basket__none {
+    font-size: 23px;
+    text-align: center;
+    margin-top: 70px;
+    color: gray;
+}
+
+@keyframes closeBtnRotate {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 @media (max-width:900px) {

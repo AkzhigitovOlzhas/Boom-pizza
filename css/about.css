@@ -1,0 +1,26 @@
+.about {
+    padding-top: 100px;
+}
+
+.about__title {
+    font-size: 45px;
+    font-family: 'Comfortaa';
+    font-weight: bold;
+}
+
+.about__article {
+    padding: 20px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.about__text {
+    font-size: 14px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.about__img {
+    width: 100%;
+}

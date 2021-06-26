@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/debaad1797.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/top_menu.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/payment.css">
+    <title>Boom Pizza</title>
+</head>
+
+<body>
+    <div class="container fixed-menu">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="../index.html" class="menu__logo">Boom Pizza</a>
+                <div class="menu__list">
+                    <a href="../index.html#pizza" class="menu__item">ПИЦЦЫ</a>
+                    <a href="../index.html#snacks" class="menu__item">ЗАКУСКИ</a>
+                    <a href="../index.html#salads" class="menu__item">САЛАТЫ</a>
+                    <a href="../index.html#desserts" class="menu__item">ДЕСЕРТЫ</a>
+                    <a href="../index.html#beverages" class="menu__item">НАПИТКИ</a>
+                    <a href="../pages/basket.html" class="menu__basket">Корзина</a>
+                </div>
+                <div class="menu__burger-icon-bars" onclick="showMenu()"></div>
+            </div>
+            <div class="burger-menu none">
+                <a href="../index.html#pizza" class="burger-menu__item">ПИЦЦЫ</a>
+                <a href="#snacks" class="burger-menu__item">ЗАКУСКИ</a>
+                <a href="#salads" class="burger-menu__item">САЛАТЫ</a>
+                <a href="#desserts" class="burger-menu__item">ДЕСЕРТЫ</a>
+                <a href="#beverages" class="burger-menu__item">НАПИТКИ</a>
+                <a href="../pages/basket.html" class=" burger-menu__basket">Корзина</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-block">
+        <div class="wrapper">
+            <div class="payment">
+                <div class="payment__title">Оформление заказа</div>
+                <div class="payment__container">
+                    <form action="success.html" id="payment_form" class="payment__form">
+                        <div class="payment__form-box">
+                            <div class="payment__form-title">Личные данные</div>
+                            <div class="payment__form-peronal-data">
+                                <input type="text" class="payment__form-field" placeholder="Имя" required>
+                                <input type="text" class="payment__form-field" placeholder="Телефон" required>
+                            </div>
+                        </div>
+
+                        <div class="payment__form-box">
+                            <div class="payment__form-title">Информация по доставке</div>
+                            <div class="payment__form-delivery">
+                                <label for="radio1"><input type="radio" name="devilery" class="payment__form-option"
+                                        id="radio1" required> Самовывоз</label>
+                                <label for="radio2"><input type="radio" name="devilery" class="payment__form-option"
+                                        id="radio2" required> Курьером</label>
+                            </div>
+                            <div class="payment__form-address-fields">
+                                <div class="payment__form-address">
+                                    <input type="text" class="payment__form-field" placeholder="Улица" required>
+                                    <input type="text" class="payment__form-field" placeholder="Дом" required>
+                                    <input type="text" class="payment__form-field" placeholder="Квартира" required>
+                                </div>
+                                <textarea name="" id="" cols="30" rows="10" class="payment__form-comment-field"
+                                    placeholder="Коментарии к заказу"></textarea>
+                            </div>
+                        </div>
+                        <div class="payment__form-box">
+                            <div class="payment__form-title">Способы оплаты</div>
+                            <div class="payment__form-method-pay">
+                                <label for="radio3"> <input type="radio" name="payment" class="payment__form-option"
+                                        id="radio3" required>Оплата наличными</label>
+                                <label for="radio4"> <input type="radio" name="payment" class="payment__form-option"
+                                        id="radio4" required>Оплата картой</label>
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <div class="payment__info">
+                        <div class="payment__info-title">Любая дополнительная информация</div>
+                        <div class="payment__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру
+                            сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а
+                            начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании
+                            генератора мы использовали небезизвестный универсальный код речей. Текст генерируется
+                            абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать
+                            текст более привлекательным и живым для визуально-слухового восприятия.
+                        </div>
+                        <div class="payment__text">
+                            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у
+                            некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст
+                            рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит
+                            советских времен.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__links">
+                <div class="footer__right">
+                    <a href="#" class="footer__link">О нас</a>
+                    <a href="#" class="footer__link">Доставка и оплата</a>
+                    <a href="#" class="footer__link">Новости и акции</a>
+                    <a href="#" class="footer__link">Вакансии</a>
+                    <a href="#" class="footer__link">Правовая информация</a>
+                </div>
+                <div class="footer__left">
+                    <a href="https://www.youtube.com/" class="footer__link-icon fa fa-youtube-play"></a>
+                    <a href="https://twitter.com/?lang=ru" class="footer__link-icon fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/__olzhaas/" class="footer__link-icon fa fa-instagram"></a>
+                    <a href="https://vk.com/" class="footer__link-icon fa fa-vk"></a>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__copyright">© 2021 Boom Pizza</div>
+                <div class="footer__dev">Разработка: <a href="https://github.com/AkzhigitovOlzhas"
+                        class="footer__dev-link">Akzhigitov Olzhas</a></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/burger_menu.js"></script>
+    <script src="../js/payment.js"></script>
+</body>
+
+</html>

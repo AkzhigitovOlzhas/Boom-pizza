@@ -16,10 +16,12 @@
     <link rel="stylesheet" href="css/promotions.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/upBtn.css">
+    <link rel="stylesheet" href="css/toast.css">
     <title>Boom Pizza</title>
 </head>
 
 <body>
+
     <a href="#" class="upBtn">
         <div class="upBtn__circle">
             <div class="upBtn-icon fas fa-rocket"></div>
@@ -36,7 +38,7 @@
                     <a href="#salads" class="menu__item">САЛАТЫ</a>
                     <a href="#desserts" class="menu__item">ДЕСЕРТЫ</a>
                     <a href="#beverages" class="menu__item">НАПИТКИ</a>
-                    <a href="/pages/basket.html" class="menu__basket">Корзина</a>
+                    <a href="pages/basket.html" class="menu__basket">Корзина</a>
                 </div>
                 <div class="menu__burger-icon-bars" onclick="showMenu()"></div>
             </div>
@@ -46,7 +48,7 @@
                 <a href="#salads" class="burger-menu__item">САЛАТЫ</a>
                 <a href="#desserts" class="burger-menu__item">ДЕСЕРТЫ</a>
                 <a href="#beverages" class="burger-menu__item">НАПИТКИ</a>
-                <a href="/pages/basket.html" class=" burger-menu__basket">Корзина</a>
+                <a href="pages/basket.html" class=" burger-menu__basket">Корзина</a>
             </div>
         </div>
     </div>
@@ -101,52 +103,8 @@
 
             <div id="beverages"></div>
             <p class="catalog__header">Напитки</p>
-
             <div class="catalog__category" id="category_beverages"></div>
 
-            <div class="promotions">
-                <div class="promotions__header">
-                    <div class="promotions__title">Новости и акции</div>
-                    <div class="promotions__all">Все акции</div>
-                </div>
-
-                <div class="promotions__cards">
-                    <div class="promotions__card">
-                        <img src="img/promotions/slide2_367x129_d43.jpg" alt="" class="promotions__img">
-                        <div class="promotions__text-box">
-                            <div class="promotions__card-title">Coca-cola в подарок при заказе от 1000 рублей</div>
-                            <div class="promotions__text">
-                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
-                                вызывает у
-                                некторых людей недоумение
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promotions__card">
-                        <img src="img/promotions/slide2_367x129_d43.jpg" alt="" class="promotions__img">
-                        <div class="promotions__text-box">
-                            <div class="promotions__card-title">Coca-cola в подарок при заказе от 1000 рублей</div>
-                            <div class="promotions__text">
-                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
-                                вызывает у
-                                некторых людей недоумение
-                            </div>
-                        </div>
-                    </div>
-                    <div class="promotions__card">
-                        <img src="img/promotions/slide2_367x129_d43.jpg" alt="" class="promotions__img">
-                        <div class="promotions__text-box">
-                            <div class="promotions__card-title">Coca-cola в подарок при заказе от 1000 рублей</div>
-                            <div class="promotions__text">
-                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который
-                                вызывает у
-                                некторых людей недоумение
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
 
             <br> <br> <br>
         </div>
@@ -239,7 +197,7 @@
         <div class="footer__content">
             <div class="footer__links">
                 <div class="footer__right">
-                    <a href="#" class="footer__link">О нас</a>
+                    <a href="pages/about.html" class="footer__link">О нас</a>
                     <a href="#" class="footer__link">Доставка и оплата</a>
                     <a href="#" class="footer__link">Новости и акции</a>
                     <a href="#" class="footer__link">Вакансии</a>
@@ -263,6 +221,7 @@
     <script src="js/counter_btn.js"></script>
     <script src="js/burger_menu.js"></script>
     <script src="js/load_page.js"></script>
+    <script src="js/basket.js"></script>
 </body>
 
 </html>

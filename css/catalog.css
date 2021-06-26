@@ -64,11 +64,8 @@
     margin-bottom: 20px;
 }
 
-
-
-.product-card__select {
-    width: 70%;
-    height: 30px;
+.product-card__value {
+    color: gray;
 }
 
 .product-card__order-box {

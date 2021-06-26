@@ -5,57 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <script src="https://kit.fontawesome.com/debaad1797.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/top_menu.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/basket.css">
-    <link rel="stylesheet" href="../css/toast.css">
-    <title>Корзина</title>
+    <link rel="stylesheet" href="../css/success.css">
+    <title>Boom Pizza</title>
 </head>
 
 <body>
-
-
-    <div class="content">
-        <div class="container fixed-menu">
-            <div class="wrapper">
-                <div class="menu">
-                    <a href="../index.html" class="menu__logo">Boom Pizza</a>
-                    <div class="menu__list">
-                        <a href="../index.html#pizza" class="menu__item">ПИЦЦЫ</a>
-                        <a href="../index.html#snacks" class="menu__item">ЗАКУСКИ</a>
-                        <a href="../index.html#salads" class="menu__item">САЛАТЫ</a>
-                        <a href="../index.html#desserts" class="menu__item">ДЕСЕРТЫ</a>
-                        <a href="../index.html#beverages" class="menu__item">НАПИТКИ</a>
-                        <a href="/pages/basket.html" class="menu__basket">Корзина</a>
-                    </div>
-                    <div class="menu__burger-icon-bars" onclick="showMenu()"></div>
+    <div class="container fixed-menu">
+        <div class="wrapper">
+            <div class="menu">
+                <a href="../index.html" class="menu__logo">Boom Pizza</a>
+                <div class="menu__list">
+                    <a href="../index.html#pizza" class="menu__item">ПИЦЦЫ</a>
+                    <a href="../index.html#snacks" class="menu__item">ЗАКУСКИ</a>
+                    <a href="../index.html#salads" class="menu__item">САЛАТЫ</a>
+                    <a href="../index.html#desserts" class="menu__item">ДЕСЕРТЫ</a>
+                    <a href="../index.html#beverages" class="menu__item">НАПИТКИ</a>
+                    <a href="../pages/basket.html" class="menu__basket">Корзина</a>
                 </div>
-                <div class="burger-menu none">
-                    <a href="../index.html#pizza" class="burger-menu__item">ПИЦЦЫ</a>
-                    <a href="../index.html#snacks" class="burger-menu__item">ЗАКУСКИ</a>
-                    <a href="../index.html#salads" class="burger-menu__item">САЛАТЫ</a>
-                    <a href="../index.html#desserts" class="burger-menu__item">ДЕСЕРТЫ</a>
-                    <a href="../index.html#beverages" class="burger-menu__item">НАПИТКИ</a>
-                    <a href="/pages/basket.html" class=" burger-menu__basket">Корзина</a>
+                <div class="menu__burger-icon-bars" onclick="showMenu()"></div>
+            </div>
+            <div class="burger-menu none">
+                <a href="../index.html#pizza" class="burger-menu__item">ПИЦЦЫ</a>
+                <a href="#snacks" class="burger-menu__item">ЗАКУСКИ</a>
+                <a href="#salads" class="burger-menu__item">САЛАТЫ</a>
+                <a href="#desserts" class="burger-menu__item">ДЕСЕРТЫ</a>
+                <a href="#beverages" class="burger-menu__item">НАПИТКИ</a>
+                <a href="../pages/basket.html" class=" burger-menu__basket">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-block">
+        <div class="wrapper">
+            <div class="success-wrapper">
+                <div class="success-wrapper2">
+                    <div class="success-message">
+                        <div class="success-message__title">Спасибо! Ваш заказ оформлен!</div>
+                        <div class="success-message__text">Мы свяжемся с вами в течение 5 минут.</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="basket">
-        <div class="basket__title">Корзина</div>
-
-        <div class="basket__products">
-            <div class="basket__none">В корзине пока что нечего нет :/</div> 
-        </div>
-
-    </div>
-
-
     <div class="footer">
         <div class="footer__content">
             <div class="footer__links">
@@ -81,9 +76,7 @@
         </div>
     </div>
 
-
     <script src="../js/burger_menu.js"></script>
-    <script src="../js/basket.js"></script>
 </body>
 
 </html>
